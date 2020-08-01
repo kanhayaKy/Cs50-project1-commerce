@@ -1,18 +1,5 @@
 {% extends "auctions/layout.html" %}
 
-{% block nav %}
-
-    <!-- If the user is logged in display the create and watchlist options in nav -->
-    {% if request.user.is_authenticated %}
-    <li class="nav-item">
-        <a class="nav-link" href="{% url 'WatchList' %}">WatchList</a>
-    </li>
-        <li class="nav-item">
-            <a class="nav-link" href="{% url 'create' %}">Create Listing</a>
-        </li>
-    {% endif %}
-{% endblock nav %}
-
 
 {% block body %}
 
